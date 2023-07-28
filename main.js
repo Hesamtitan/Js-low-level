@@ -46,6 +46,7 @@ function add(a, b) {
 }
 let x = add(2, 5);
 console.log(x);
+console.log(add(55,10));
 
 // add(4, 5);
 // add(10, 2);
