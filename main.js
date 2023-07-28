@@ -30,10 +30,26 @@
 //     alert("Wellcome");
 //     break;
 // }
-//_____________________________________________________________________
+// _____________________________________________________________________
 // ternary
-let firstName = prompt("Enter your name");
+// let firstName = prompt("Enter your name");
 
-firstName.toLowerCase() == "Hesam".toLowerCase()
-  ? alert("Wellcome Hesam")
-  : alert("Wellcome");
+// firstName.toLowerCase() == "Hesam".toLowerCase()
+//   ? alert("Wellcome Hesam")
+//   : alert("Wellcome");
+// _____________________________________________________________________
+//function
+
+function add(a, b) {
+  //   console.log(a + b);
+  return a * b;
+}
+let x = add(2, 5);
+console.log(x);
+
+// add(4, 5);
+// add(10, 2);
+// add(25, 6);
+// add(41, 15);
+// add(40, 50);
+// console.log(x);
