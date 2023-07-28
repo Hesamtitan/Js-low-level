@@ -7,7 +7,9 @@
 
 //_____________________________________________________________________
 
-let firstName = prompt();
-if (firstName == "hesam") {
+let firstName = prompt("Enter your name");
+if (firstName.toLowerCase() == "Hesam".toLowerCase()) {
   alert("Wellcome hesam");
+} else {
+  alert("Wellcom User");
 }
