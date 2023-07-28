@@ -62,8 +62,20 @@
 // _____________________________________________________________________
 //arrow function
 
-let arrow = (a, b) => {
-  return a + b;
-};
-let sum = arrow(15, 3);
-console.log(sum);
+// let arrow = (a, b) => {
+//   return a + b;
+// };
+// let sum = arrow(15, 3);
+// console.log(sum);
+// _____________________________________________________________________
+// array
+
+let number = [1, 2, 3, 4, 5];
+let strings = ["hi", "hellow", "by"];
+let booleans = [true, true, false, false];
+let other = [1, 2, "hi", "hellow", true, false, [10, 20, "by", false]];
+
+console.log(number);
+console.log(strings);
+console.log(booleans);
+console.log(other);
