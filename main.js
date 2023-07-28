@@ -26,7 +26,7 @@
 //   case "Ali".toLowerCase():
 //     alert("Wellcome Ali");
 //     break;
-//   default:
+//   default:expression
 //     alert("Wellcome");
 //     break;
 // }
@@ -40,17 +40,21 @@
 // _____________________________________________________________________
 //function
 
-function add(a, b) {
-  //   console.log(a + b);
-  return a * b;
-}
-let x = add(2, 5);
-console.log(x);
-console.log(add(55,10));
-
+// function add(a, b) {
+//   //   console.log(a + b);
+//   return a * b;
+// }
+// let x = add(2, 5);
+// console.log(x);
+// console.log(add(55,10));
 // add(4, 5);
 // add(10, 2);
 // add(25, 6);
 // add(41, 15);
 // add(40, 50);
 // console.log(x);
+// _____________________________________________________________________
+//IIFE
+(function (a, b) {
+  console.log(a + b);
+})(5, 17);
