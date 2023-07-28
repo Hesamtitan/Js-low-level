@@ -55,6 +55,15 @@
 // console.log(x);
 // _____________________________________________________________________
 //IIFE
-(function (a, b) {
-  console.log(a + b);
-})(5, 17);
+// (function (a, b) {
+//   console.log(a + b);
+// })(5, 17);
+
+// _____________________________________________________________________
+//arrow function
+
+let arrow = (a, b) => {
+  return a + b;
+};
+let sum = arrow(15, 3);
+console.log(sum);
