@@ -18,15 +18,22 @@
 //_____________________________________________________________________
 //switch
 
+// let firstName = prompt("Enter your name");
+// switch (firstName.toLowerCase()) {
+//   case "Hesam".toLowerCase():
+//     alert("Wellcome Hesam");
+//     break;
+//   case "Ali".toLowerCase():
+//     alert("Wellcome Ali");
+//     break;
+//   default:
+//     alert("Wellcome");
+//     break;
+// }
+//_____________________________________________________________________
+// ternary
 let firstName = prompt("Enter your name");
-switch (firstName.toLowerCase()) {
-  case "Hesam".toLowerCase():
-    alert("Wellcome Hesam");
-    break;
-  case "Ali".toLowerCase():
-    alert("Wellcome Ali");
-    break;
-  default:
-    alert("Wellcome");
-    break;
-}
+
+firstName.toLowerCase() == "Hesam".toLowerCase()
+  ? alert("Wellcome Hesam")
+  : alert("Wellcome");
