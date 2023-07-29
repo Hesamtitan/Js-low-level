@@ -68,7 +68,7 @@
 // let sum = arrow(15, 3);
 // console.log(sum);
 // _____________________________________________________________________
-// array
+// [array]
 
 // let number = [1, 2, 3, 4, 5];
 // let strings = ["hi", "hellow", "by"];
@@ -80,18 +80,47 @@
 // console.log(booleans);
 // console.log(other);
 // _____________________________________________________________________
-// array-methods
+// [array-methods]
 
-let number = [1, 2, 3, 4, 5];
-let number2 = [6, 7, 8, 9, 10];
+// let number = [1, 2, 3, 4, 5];
+// let number2 = [6, 7, 8, 9, 10];
 
-number.push(["hello"], 2);
-number.pop();
-number.unshift(0, 5, "hi");
-number.shift()
-console.log(number);
+// number.push(["hello"], 2);
+// number.pop();
+// number.unshift(0, 5, "hi");
+// number.shift()
+// console.log(number);
 
-number.push(number2);
-number.push(...number2);
+// number.push(number2);
+// number.push(...number2);
 
-console.log(number);
+// console.log(number);
+// _____________________________________________________________________
+//{object}
+// let person = { name: "hesam", age: 34 };
+// let person = {
+//   name: "hesam",
+//   birthday: 1989,
+//   getAge: function () {
+//     return 2023 - this.birthday;
+//   },
+// };
+// console.log(person.getAge());
+
+let person = {
+  name: "hesam",
+  birthday: 1989,
+  child: ["soheil"],
+  parents: {
+    father: "x",
+    mother: "y",
+  },
+  getAge: function () {
+    return 2023 - this.birthday;
+  },
+};
+console.log(`Name is : ${person.name}`);
+console.log(`Birthday is : ${person.birthday}`);
+console.log(`Childe name is : ${person.child[0]}`);
+console.log(`father name is : ${person.parents.father}`);
+console.log(`your age is : ${person.getAge()}`);
