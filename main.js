@@ -70,12 +70,28 @@
 // _____________________________________________________________________
 // array
 
+// let number = [1, 2, 3, 4, 5];
+// let strings = ["hi", "hellow", "by"];
+// let booleans = [true, true, false, false];
+// let other = [1, 2, "hi", "hellow", true, false, [10, 20, "by", false]];
+
+// console.log(number);
+// console.log(strings);
+// console.log(booleans);
+// console.log(other);
+// _____________________________________________________________________
+// array-methods
+
 let number = [1, 2, 3, 4, 5];
-let strings = ["hi", "hellow", "by"];
-let booleans = [true, true, false, false];
-let other = [1, 2, "hi", "hellow", true, false, [10, 20, "by", false]];
+let number2 = [6, 7, 8, 9, 10];
+
+number.push(["hello"], 2);
+number.pop();
+number.unshift(0, 5, "hi");
+number.shift()
+console.log(number);
+
+number.push(number2);
+number.push(...number2);
 
 console.log(number);
-console.log(strings);
-console.log(booleans);
-console.log(other);
