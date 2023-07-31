@@ -125,27 +125,46 @@
 // console.log(`father name is : ${person.parents.father}`);
 // console.log(`your age is : ${person.getAge()}`);
 // _____________________________________________________________________
-// loop
+// loop for
 
-function sayhello() {
-  console.log("hello");
-}
+// function sayhello() {
+//   console.log("hello");
+// }
 
-for (let i = 0; i < 5; i++) {
-  sayhello();
-}
+// for (let i = 0; i < 5; i++) {
+//   sayhello();
+// }
 
+// let loop = function sayhello() {
+//   console.log("hi");
+// };
+// for (let i = 0; i < 3; i++) {
+//   loop();
+// }
 
-let numbers = [2,6,5,48,78];
+// let numbers = [2, 6, 5, 48, 78];
+// let i = 0;
+// for (; i < 9; i = i + 2) {
+//   console.log(i);
+// }
+// console.log(numbers);
+
+// let numbers2 = [1, 5, 15, "ali", "wellcome"];
+
+// for (let i = 0; i < numbers2.length; i++) {
+//   console.log(numbers2[i]);
+// }
+// _____________________________________________________________________
+//loop while
+let numbers = [-2,-1,0,1,3,4,5,6,7,8,9];
+// numbers.push(15, 48, 25, 6987, 2);
+// numbers.pop();
+// numbers.shift();
+// numbers.unshift(9, 7, "as", 4, 5);
+
 let i = 0;
-for (; i < 9; i = i + 2) {
-
-  console.log(i);
-}
-console.log(numbers);
-
-let object = [1, 5, 15, "ali", "wellcome"];
-
-for (let i = 0; i < object.length; i++) {
-  console.log(object[3]);
+while (i < numbers.length) {
+  console.log(numbers[i]);
+  // i = i + 2;
+  i++
 }
