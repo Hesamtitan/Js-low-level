@@ -107,20 +107,45 @@
 // };
 // console.log(person.getAge());
 
-let person = {
-  name: "hesam",
-  birthday: 1989,
-  child: ["soheil"],
-  parents: {
-    father: "x",
-    mother: "y",
-  },
-  getAge: function () {
-    return 2023 - this.birthday;
-  },
-};
-console.log(`Name is : ${person.name}`);
-console.log(`Birthday is : ${person.birthday}`);
-console.log(`Childe name is : ${person.child[0]}`);
-console.log(`father name is : ${person.parents.father}`);
-console.log(`your age is : ${person.getAge()}`);
+// let person = {
+//   name: "hesam",
+//   birthday: 1989,
+//   child: ["soheil"],
+//   parents: {
+//     father: "x",
+//     mother: "y",
+//   },
+//   getAge: function () {
+//     return 2023 - this.birthday;
+//   },
+// };
+// console.log(`Name is : ${person.name}`);
+// console.log(`Birthday is : ${person.birthday}`);
+// console.log(`Childe name is : ${person.child[0]}`);
+// console.log(`father name is : ${person.parents.father}`);
+// console.log(`your age is : ${person.getAge()}`);
+// _____________________________________________________________________
+// loop
+
+function sayhello() {
+  console.log("hello");
+}
+
+for (let i = 0; i < 5; i++) {
+  sayhello();
+}
+
+
+let numbers = [2,6,5,48,78];
+let i = 0;
+for (; i < 9; i = i + 2) {
+
+  console.log(i);
+}
+console.log(numbers);
+
+let object = [1, 5, 15, "ali", "wellcome"];
+
+for (let i = 0; i < object.length; i++) {
+  console.log(object[3]);
+}
