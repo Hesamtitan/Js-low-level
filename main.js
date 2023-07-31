@@ -156,15 +156,26 @@
 // }
 // _____________________________________________________________________
 //loop while
-let numbers = [-2,-1,0,1,3,4,5,6,7,8,9];
+// let numbers = [-2,-1,0,1,3,4,5,6,7,8,9];
 // numbers.push(15, 48, 25, 6987, 2);
 // numbers.pop();
 // numbers.shift();
 // numbers.unshift(9, 7, "as", 4, 5);
 
+// let i = 0;
+// while (i < numbers.length) {
+//   console.log(numbers[i]);
+//   // i = i + 2;
+//   i++
+// }
+// _____________________________________________________________________
+//loop do-while
+
+let num = [2, 4, 6, 8, 10];
+
 let i = 0;
-while (i < numbers.length) {
-  console.log(numbers[i]);
+do {
+  console.log(num[i]); //allways do this part of code//
   // i = i + 2;
-  i++
-}
+  i++;
+} while (i < num.length);
