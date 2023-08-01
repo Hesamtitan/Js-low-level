@@ -171,11 +171,26 @@
 // _____________________________________________________________________
 //loop do-while
 
-let num = [2, 4, 6, 8, 10];
+// let num = [2, 4, 6, 8, 10];
 
-let i = 0;
-do {
-  console.log(num[i]); //allways do this part of code//
-  // i = i + 2;
-  i++;
-} while (i < num.length);
+// let i = 0;
+// do {
+//   console.log(num[i]); //allways do this part of code//
+//   // i = i + 2;
+//   i++;
+// } while (i < num.length);
+// _____________________________________________________________________
+//selecor-element-html-in-JS
+
+console.log(document.getElementById("title").innerText);
+console.log(document.getElementsByTagName("h1")[3].innerText);
+console.log(document.getElementsByClassName("hello")[0].innerText);
+console.log(document.querySelector("#hi"));
+console.log(document.querySelector(".hii"));
+console.log(document.querySelector("h1").innerText);
+console.log(document.querySelector("h1"));
+console.log(document.querySelectorAll("h1"));
+console.log(document.querySelectorAll("#title"));
+console.log(document.querySelectorAll(".hii"));
+console.log(document.querySelectorAll("h1")[3]);
+console.log(document.querySelectorAll("h1")[3].innerText='hesam');
