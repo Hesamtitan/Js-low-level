@@ -180,17 +180,28 @@
 //   i++;
 // } while (i < num.length);
 // _____________________________________________________________________
-//selecor-element-html-in-JS
+//selector-element-html-in-JS
 
-console.log(document.getElementById("title").innerText);
-console.log(document.getElementsByTagName("h1")[3].innerText);
-console.log(document.getElementsByClassName("hello")[0].innerText);
-console.log(document.querySelector("#hi"));
-console.log(document.querySelector(".hii"));
-console.log(document.querySelector("h1").innerText);
-console.log(document.querySelector("h1"));
-console.log(document.querySelectorAll("h1"));
-console.log(document.querySelectorAll("#title"));
-console.log(document.querySelectorAll(".hii"));
-console.log(document.querySelectorAll("h1")[3]);
-console.log(document.querySelectorAll("h1")[3].innerText='hesam');
+// console.log(document.getElementById("title").innerText);
+// console.log(document.getElementsByTagName("h1")[3].innerText);
+// console.log(document.getElementsByClassName("hello")[0].innerText);
+// console.log(document.querySelector("#hi"));
+// console.log(document.querySelector(".hii"));
+// console.log(document.querySelector("h1").innerText);
+// console.log(document.querySelector("h1"));
+// console.log(document.querySelectorAll("h1"));
+// console.log(document.querySelectorAll("#title"));
+// console.log(document.querySelectorAll(".hii"));
+// console.log(document.querySelectorAll("h1")[3]);
+// console.log(document.querySelectorAll("h1")[3].innerText='hesam');
+// _____________________________________________________________________
+//selector-element-css
+// document.querySelector("#title").style.color = "#00bbee88"
+// document.querySelector("#title").style.color = "red"
+document.querySelector("#title").style.color = "rgba(200,20,10,0.8)";
+document.querySelector("body").style.margin = "20px";
+document.querySelector("#title").style.background = "#55ff56c0";
+document.querySelector("#title").style.borderRadius = "50%";
+document.querySelector("#title").style.fontSize = "50px";
+document.querySelector("#title").style.fontSize = "50px";
+document.querySelector("#title").style.direction = "rtl";
