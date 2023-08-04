@@ -196,12 +196,20 @@
 // console.log(document.querySelectorAll("h1")[3].innerText='hesam');
 // _____________________________________________________________________
 //selector-element-css
-// document.querySelector("#title").style.color = "#00bbee88"
-// document.querySelector("#title").style.color = "red"
-document.querySelector("#title").style.color = "rgba(200,20,10,0.8)";
-document.querySelector("body").style.margin = "20px";
-document.querySelector("#title").style.background = "#55ff56c0";
-document.querySelector("#title").style.borderRadius = "50%";
-document.querySelector("#title").style.fontSize = "50px";
-document.querySelector("#title").style.fontSize = "50px";
-document.querySelector("#title").style.direction = "rtl";
+// // document.querySelector("#title").style.color = "#00bbee88"
+// // document.querySelector("#title").style.color = "red"
+// document.querySelector("#title").style.color = "rgba(200,20,10,0.8)";
+// document.querySelector("body").style.margin = "20px";
+// document.querySelector("#title").style.background = "#55ff56c0";
+// document.querySelector("#title").style.borderRadius = "50%";
+// document.querySelector("#title").style.fontSize = "50px";
+// document.querySelector("#title").style.fontSize = "50px";
+// document.querySelector("#title").style.direction = "rtl";
+// _____________________________________________________________________
+//event
+document.querySelector("#btn").addEventListener("click",hello);
+
+function hello() {
+  // console.log("helloww");
+  alert("hello");
+}
