@@ -207,9 +207,33 @@
 // document.querySelector("#title").style.direction = "rtl";
 // _____________________________________________________________________
 //event
-document.querySelector("#btn").addEventListener("click",hello);
+// document.querySelector("#btn").addEventListener("click",hello);
 
-function hello() {
-  // console.log("helloww");
-  alert("hello");
+// function hello() {
+//   // console.log("helloww");
+//   alert("hello");
+// }
+// _____________________________________________________________________
+//challeng-01
+document.querySelector("#change-color").addEventListener("click", chengColor);
+function chengColor() {
+  let color = document.querySelector("#color").value;
+  color = "#" + color;
+  if (/^#[0-9A-F]{6}$/i.test(color)) {
+    document.querySelector("body").style.backgroundColor = color;
+    document.querySelector("#error").style.display = "none";
+  } else {
+    // alert("hex code inccorect");
+    document.querySelector("#error").style.display = "block";
+  }
+
+  // let color2 = document.getElementById("color").value;
+  // console.log(color);
+
+  // console.log(document.querySelector("body"));
+  // document.querySelector("body").style.backgroundColor= color;
+  // console.log(color);
+  // console.log(color2);
 }
+
+// document.getElementById("change-color").addEventListener("click", chengColor);
