@@ -1,15 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Js</title>
+    <meta charset="utf-8" />
+    <title>Simple Calculator using HTML, CSS and JavaScript</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
-  <body>
-    # <input type="text" id="color" placeholder=" color" />
-    <button id="change-color">change</button>
-    <p id="error" style="display: none">hex code inccorect</p>
 
-    <script src="main.js"></script>
+  <body>
+    <table class="calculator">
+      <tr>
+        <td colspan="3">
+          <input
+            class="display-box"
+            type="text"
+            id="result"
+            onclick="zeroHandler()"
+          />
+        </td>
+
+        <!-- clearScreen() function clears all the values -->
+        <td>
+          <input
+            type="button"
+            value="C"
+            class="global"
+            id="btn"
+            onclick="deletHeandler()"
+          />
+        </td>
+      </tr>
+      <tr>
+        <!-- display() function displays the value of clicked button -->
+        <td><input type="button" value="1" class="global number" /></td>
+        <td><input type="button" value="2" class="global number" /></td>
+        <td><input type="button" value="3" class="global number" /></td>
+        <td><input type="button" value="/" class="global" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" class="global number" /></td>
+        <td><input type="button" value="5" class="global number" /></td>
+        <td><input type="button" value="6" class="global number" /></td>
+        <td><input type="button" value="-" class="global" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" class="global number" /></td>
+        <td><input type="button" value="8" class="global number" /></td>
+        <td><input type="button" value="9" class="global number" /></td>
+        <td><input type="button" value="+" class="global" /></td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            type="button"
+            value="."
+            onclick="dotHandler()"
+            class="global number"
+          />
+        </td>
+        <td><input type="button" value="0" class="global number" /></td>
+
+        <!-- calculate() function evaluates the mathematical expression -->
+        <td><input type="button" value="=" class="global" id="btn" /></td>
+        <td>
+          <input type="button" value="*" class="global" />
+        </td>
+      </tr>
+    </table>
+
+    <script src="./main.js"></script>
   </body>
 </html>

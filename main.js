@@ -227,16 +227,47 @@
 //     // alert("hex code inccorect");
 //     document.querySelector("#error").style.display = "block";
 //   }
-//method 2
-document.getElementById("change-color").addEventListener("click", function () {
-  let color2 = document.getElementById("color").value;
-  color2 = "#" + color2;
-  document.querySelector("body").style.backgroundColor = color2;
-  if (/^#[0-9A-F]{6}$/i.test(color2)) {
-    document.querySelector("body").style.backgroundColor = color2;
-    document.getElementById("error").style.display = "none";
-  } else {
-    document.getElementById("error").style.display = "block";
-  }
-});
+// method 2
+// document.getElementById("change-color").addEventListener("click", function () {
+//   let color2 = document.getElementById("color").value;
+//   color2 = "#" + color2;
+//   // document.querySelector("body").style.backgroundColor = color2;
+//   if (/^#[0-9A-F]{3,6}$/i.test(color2)) {
+//     document.querySelector("body").style.backgroundColor = color2;
+//     document.getElementById("error").style.display = "none";
+//   } else {
+//     document.getElementById("error").style.display = "block";
+//   }
+// });
 
+// _____________________________________________________________________
+// calleng-2-calculator
+let RESULT = document.getElementById("result");
+
+let numbers = document.querySelectorAll(".number");
+for (let i = 0; i < numbers.length; i++) {
+  numbers[i].addEventListener("click", inputHandler);
+}
+// let number2 = document.getElementsByClassName("number");
+// console.log(event);
+
+function inputHandler(event) {
+  let number = event.target.value;
+  RESULT.value += number;
+}
+function dotHandler() {
+  let result = RESULT;
+  if (result.value.length === 0) {
+    result.value = "0";
+  } else if (result.value.indexOf(".") == -1) {
+    result.value += "";
+  }
+}
+
+function deletHeandler() {
+  RESULT.value = "";
+}
+
+// function zarbHandler() {
+//   RESULT.value + RESULT.value;
+// }
