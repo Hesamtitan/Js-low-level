@@ -243,10 +243,14 @@
 // _____________________________________________________________________
 // calleng-2-calculator
 let RESULT = document.getElementById("result");
-
 let numbers = document.querySelectorAll(".number");
+let isFirst = true;
+let firstNumber, secendNumber;
+let operator;
+
 for (let i = 0; i < numbers.length; i++) {
   numbers[i].addEventListener("click", inputHandler);
+
 }
 // let number2 = document.getElementsByClassName("number");
 // console.log(event);
@@ -254,7 +258,11 @@ for (let i = 0; i < numbers.length; i++) {
 function inputHandler(event) {
   let number = event.target.value;
   RESULT.value += number;
+  if (isFirst) {
+    firstNumber = parseFloat(RESULT.value);
+  } else secendNumber = parseFloat(RESULT.value);
 }
+
 function dotHandler() {
   let result = RESULT;
   if (result.value.length === 0) {
@@ -266,8 +274,38 @@ function dotHandler() {
 
 function deletHeandler() {
   RESULT.value = "";
+  isFirst = true;
 }
 
-// function zarbHandler() {
-//   RESULT.value + RESULT.value;
-// }
+function operation(input) {
+  operator = input;
+  isFirst = false;
+  RESULT.value = "";
+}
+
+function finalResult() {
+  let result;
+  switch (operator) {
+    case "+":
+      // RESULT.value;
+      result = firstNumber + secendNumber;
+      break;
+    case "-":
+      // RESULT.value
+      result = firstNumber - secendNumber;
+      break;
+    case "*":
+      // RESULT.value
+      result = firstNumber * secendNumber;
+      break;
+    case "/":
+      // RESULT.value
+      result = firstNumber / secendNumber;
+      break;
+
+    default:
+      break;
+  }
+
+  RESULT.value = result;
+}

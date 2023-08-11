@@ -10,12 +10,7 @@
     <table class="calculator">
       <tr>
         <td colspan="3">
-          <input
-            class="display-box"
-            type="text"
-            id="result"
-            onclick="zeroHandler()"
-          />
+          <input class="display-box" type="text" id="result"" />
         </td>
 
         <!-- clearScreen() function clears all the values -->
@@ -34,19 +29,40 @@
         <td><input type="button" value="1" class="global number" /></td>
         <td><input type="button" value="2" class="global number" /></td>
         <td><input type="button" value="3" class="global number" /></td>
-        <td><input type="button" value="/" class="global" /></td>
+        <td>
+          <input
+            type="button"
+            value="/"
+            class="global"
+            onclick="operation('/')"
+          />
+        </td>
       </tr>
       <tr>
         <td><input type="button" value="4" class="global number" /></td>
         <td><input type="button" value="5" class="global number" /></td>
         <td><input type="button" value="6" class="global number" /></td>
-        <td><input type="button" value="-" class="global" /></td>
+        <td>
+          <input
+            type="button"
+            value="-"
+            class="global"
+            onclick="operation('-')"
+          />
+        </td>
       </tr>
       <tr>
         <td><input type="button" value="7" class="global number" /></td>
         <td><input type="button" value="8" class="global number" /></td>
         <td><input type="button" value="9" class="global number" /></td>
-        <td><input type="button" value="+" class="global" /></td>
+        <td>
+          <input
+            type="button"
+            value="+"
+            class="global"
+            onclick="operation('+')"
+          />
+        </td>
       </tr>
       <tr>
         <td>
@@ -60,9 +76,22 @@
         <td><input type="button" value="0" class="global number" /></td>
 
         <!-- calculate() function evaluates the mathematical expression -->
-        <td><input type="button" value="=" class="global" id="btn" /></td>
         <td>
-          <input type="button" value="*" class="global" />
+          <input
+            type="button"
+            value="="
+            class="global"
+            id="btn"
+            onclick="finalResult()"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="*"
+            class="global"
+            onclick="operation('*')"
+          />
         </td>
       </tr>
     </table>
