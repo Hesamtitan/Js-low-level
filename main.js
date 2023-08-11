@@ -250,7 +250,6 @@ let operator;
 
 for (let i = 0; i < numbers.length; i++) {
   numbers[i].addEventListener("click", inputHandler);
-
 }
 // let number2 = document.getElementsByClassName("number");
 // console.log(event);
@@ -285,27 +284,42 @@ function operation(input) {
 
 function finalResult() {
   let result;
-  switch (operator) {
-    case "+":
-      // RESULT.value;
-      result = firstNumber + secendNumber;
-      break;
-    case "-":
-      // RESULT.value
-      result = firstNumber - secendNumber;
-      break;
-    case "*":
-      // RESULT.value
-      result = firstNumber * secendNumber;
-      break;
-    case "/":
-      // RESULT.value
-      result = firstNumber / secendNumber;
-      break;
 
-    default:
-      break;
+  // if method
+
+  if (operator == "+") {
+    result = firstNumber + secendNumber;
+  } else if (operator == "-") {
+    result = firstNumber - secendNumber;
+  } else if (operator == "/") {
+    result = firstNumber / secendNumber;
+  } else {
+    result = firstNumber * secendNumber;
   }
+
+  //switch method
+  // switch (operator) {
+  //   case "+":
+  //     // RESULT.value;
+  //     result = firstNumber + secendNumber;
+  //     break;
+  //   case "-":
+  //     // RESULT.value
+  //     result = firstNumber - secendNumber;
+  //     break;
+  //   case "*":
+  //     // RESULT.value
+  //     result = firstNumber * secendNumber;
+  //     break;
+  //   case "/":
+  //     // RESULT.value
+  //     result = firstNumber / secendNumber;
+  //     break;
+
+  //   default:
+  //     break;
+  // }
 
   RESULT.value = result;
 }
+// _____________________________________________________________________
