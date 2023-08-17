@@ -9,6 +9,10 @@
   row-gap: 2px;
   width: 70%;
 }
+p {
+  margin: auto;
+
+}
 
 .cell {
   background-color: gray;
