@@ -3,27 +3,37 @@ let playerPostion;
 let snakeAndLadders;
 let isPlaying = true;
 
-activePlayer = 0;
-playerPostion = [0, 0];
-snakeAndLadders = new Array(100);
-
-for (let i = 0; i < 20; i++) {
-  let postion = Math.floor(Math.random() * 100);
-
-  let dest = Math.floor(Math.random() * 100);
-  if (postion != dest) {
-    snakeAndLadders[postion] = dest;
-  }
-}
-
 for (let i = 0; i < 100; i++) {
   let cell = document.createElement("div");
   cell.classList.add("cell");
   document.getElementById("board").appendChild(cell);
 }
-
 let board = document.getElementsByClassName("cell");
-board[0].innerHTML = "&#10112";
+
+function resetGame() {
+  activePlayer = 0;
+  playerPostion = [0, 0];
+  snakeAndLadders = new Array(100);
+  isPlaying = true;
+
+  for (let i = 0; i < 100; i++) {
+    board[i].innerHTML = "";
+    board[0].innerHTML = "&#x2659";
+  }
+
+  for (let i = 0; i < 20; i++) {
+    let position = Math.floor(Math.random() * 100);
+
+    let dest = Math.floor(Math.random() * 100);
+    if (position != dest) {
+      snakeAndLadders[position] = dest;
+    }
+  }
+}
+
+resetGame();
+
+board[0].innerHTML = "&#x2659";
 
 document.getElementById("roll").addEventListener("click", function () {
   if (isPlaying) {
@@ -61,7 +71,7 @@ document.getElementById("roll").addEventListener("click", function () {
       return;
     }
 
-    board[playerPostion[activePlayer]].innerHTML = "&#10112";
+    board[playerPostion[activePlayer]].innerHTML = "&#x2659";
 
     activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
 
@@ -69,3 +79,4 @@ document.getElementById("roll").addEventListener("click", function () {
       "Active Player =" + (activePlayer + 1);
   }
 });
+document.getElementById("reset").addEventListener("click", resetGame);
